@@ -23,15 +23,32 @@ body {
   background: #fff;
 }
 
+.line__left {
+  background: gray;
+  width: 0.5px;
+  height: 32px;
+  display: none;
+}
+
+.line__right {
+  background: gray;
+  width: 0.5px;
+  height: 32px;
+  margin-left: 20px;
+}
+
 .services__logo-left,
 .services__logo-right {
   display: flex;
   align-items: center;
   gap: 16px;
+  margin-left: 50px;
 }
 
 .services__logo-mid {
   display: none;
+  margin-left: auto;
+  gap: 16px;
 }
 
 .services {
@@ -69,7 +86,6 @@ body {
   gap: 12px;
   overflow-x: auto;
   margin: 20px 0;
-  flex-wrap: wrap;
   gap: 12px;
 }
 
@@ -100,6 +116,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  padding: 10px;
 }
 
 .services__text {
@@ -131,6 +148,10 @@ body {
     gap: 32px;
   }
 
+  .line__left {
+    display: block;
+  }
+
   .services__text {
     width: 50%;
   }
@@ -141,6 +162,8 @@ body {
 
   .services__text-hidden {
     display: block;
+    height: 40px;
+    overflow: hidden;
   }
 
   .services__logo-mid {
@@ -172,5 +195,11 @@ body {
   .services__menu {
     flex-wrap: wrap;
     overflow-x: visible;
+  }
+
+  .services__text-hidden {
+    display: block;
+    overflow: visible;
+    height: auto;
   }
 }
