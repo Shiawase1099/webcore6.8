@@ -14,25 +14,28 @@ body {
   background: #f8f8f8;
 }
 
-/* HEADER */
 .services__header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 16px;
   border-bottom: 1px solid #d9fff5;
+  background: #fff;
 }
 
 .services__logo-left,
-.services__logo-mid,
 .services__logo-right {
   display: flex;
   align-items: center;
   gap: 16px;
 }
 
+.services__logo-mid {
+  display: none;
+}
+
 .services {
-  padding: 16px;
+  background: #f8f8f8;
 }
 
 .services__title-wrapper {
@@ -86,6 +89,7 @@ body {
   border: 1px solid transparent;
   cursor: pointer;
   white-space: nowrap;
+  flex: 0 0 auto;
 }
 
 .services__tab--active {
@@ -163,5 +167,10 @@ body {
 
   .services__tab--reviews {
     display: block;
+  }
+
+  .services__menu {
+    flex-wrap: wrap;
+    overflow-x: visible;
   }
 }
